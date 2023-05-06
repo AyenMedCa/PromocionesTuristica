@@ -1,4 +1,6 @@
-public abstract class Alojamiento {
+package alojamiento;
+
+public class Alojamiento{
 
     private String nombre;
     private String direccion;
@@ -11,6 +13,7 @@ public abstract class Alojamiento {
         this.localidad = localidad;
         this.gerente = gerente;
     }
+
 
     public String getNombre() {
         return nombre;
@@ -42,5 +45,11 @@ public abstract class Alojamiento {
 
     public void setGerente(String gerente) {
         this.gerente = gerente;
+    }
+
+    @Override
+    public String toString() {
+        return "Alojamiento[ " +
+                "nombre: '" + nombre+ ']';
     }
 }
